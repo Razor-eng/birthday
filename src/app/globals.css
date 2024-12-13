@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Balloon Styles */
+.balloon {
+  position: relative;
+  top: 250px;
+  width: 120px;
+  height: 180px;
+  border-radius: 60% 60% 50% 50%; /* More realistic balloon shape */
+  background: linear-gradient(
+    145deg,
+    #ff9999,
+    #ff6666
+  ); /* Gradient effect for shine */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  animation: float 6s ease-in-out infinite, sway 3s ease-in-out infinite;
+  margin-top: -30px; /* Adjusted so they don't overlap with the text */
+}
+
+.balloon::after {
+  content: "";
+  position: absolute;
+  bottom: -30px; /* Lengthened string to appear more realistic */
+  left: 50%;
+  width: 3px;
+  height: 60px;
+  background-color: #333;
+  transform: translateX(-50%);
+  animation: string-sway 6s ease-in-out infinite;
+}
+
+/* Balloon Color Variations */
+.balloon-red {
+  background: linear-gradient(145deg, #ff6666, #ff9999);
+}
+
+.balloon-yellow {
+  background: linear-gradient(145deg, #ffeb3b, #ffcc00);
+}
+
+.balloon-green {
+  /* background: linear-gradient(145deg, #4caf50, #81c784); */
+  background: #f4c2c2;
+}
+
+.balloon-blue {
+  /* background: linear-gradient(145deg, #2196f3, #64b5f6); */
+  background: #89cff0;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-40px) rotate(10deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+/* Swaying Balloon Animation */
+@keyframes sway {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Balloon String Sway Animation */
+@keyframes string-sway {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
