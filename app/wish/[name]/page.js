@@ -64,7 +64,7 @@ const WishPage = () => {
             {/* Fireworks Canvas */}
             <canvas
                 id="fireworks-canvas"
-                className="absolute top-0 left-0 w-full h-full"
+                className="absolute top-0 left-0 w-full h-full hidden md:block"
                 style={{ pointerEvents: "none" }}
             ></canvas>
 
