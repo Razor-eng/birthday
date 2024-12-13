@@ -1,7 +1,11 @@
 "use client"
+
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Lottie from "react-lottie";
+import dynamic from "next/dynamic"; // Import dynamic from next
+
+// Dynamically import Lottie with SSR disabled
+const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 
 import pleaseAnimation from "../public/please.json"; // Please animation
 

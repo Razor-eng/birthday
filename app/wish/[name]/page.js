@@ -2,8 +2,12 @@
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import Fireworks from "fireworks-js"; // Fireworks library
-import Lottie from "react-lottie"; // Lottie for animations
+import dynamic from "next/dynamic"; // Import dynamic from next
+
+// Dynamically import Lottie with SSR disabled
+const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 import { useSpring, animated } from "react-spring"; // React-Spring for smooth transitions
+
 import gsap from "gsap"; // GSAP for animations
 import AOS from "aos"; // AOS for scroll-based animations
 import "aos/dist/aos.css"; // Import AOS styles
