@@ -59,7 +59,7 @@ const WishPage = () => {
     }, [name]);
 
     return (
-        <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-[#89CFF0] via-[#E3BC9A] to-[#F4C2C2] text-white text-center relative">
+        <div className="flex flex-col items-center justify-center h-screen w-screen overflow-hidden bg-gradient-to-r from-[#89CFF0] via-[#E3BC9A] to-[#F4C2C2] text-white text-center relative">
 
             {/* Fireworks Canvas */}
             <canvas

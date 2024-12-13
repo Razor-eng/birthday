@@ -23,7 +23,7 @@ canvas {
 /* Balloon Styles */
 .balloon {
   position: relative;
-  top: 250px;
+  top: 200px;
   width: 120px;
   height: 180px;
   border-radius: 60% 60% 50% 50%; /* More realistic balloon shape */
@@ -34,7 +34,6 @@ canvas {
   ); /* Gradient effect for shine */
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
   animation: float 6s ease-in-out infinite, sway 3s ease-in-out infinite;
-  margin-top: -30px; /* Adjusted so they don't overlap with the text */
 }
 
 .balloon::after {
