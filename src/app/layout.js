@@ -1,14 +1,14 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Rajat Kumar Maharana",
+  title: "Happy Birthday",
   description: "Portfolio created by next app",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body suppressHydrationWarning>
+    <html lang="en">
+      <body>
         {children}
       </body>
     </html>
