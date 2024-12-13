@@ -9,8 +9,8 @@ import AOS from "aos"; // AOS for scroll-based animations
 import "aos/dist/aos.css"; // Import AOS styles
 
 // Import the Lottie animation JSON files
-import cakeAnimation from "../../../../public/cake-animation.json"; // Cake animation
-import confettiAnimation from "../../../../public/confetti.json"; // Confetti animation
+import cakeAnimation from "../../../public/cake-animation.json"; // Cake animation
+import confettiAnimation from "../../../public/confetti.json"; // Confetti animation
 import Image from "next/image";
 
 const WishPage = () => {
@@ -111,6 +111,8 @@ const WishPage = () => {
                         width={200}
                         height={200}
                         className="size-28"
+                        unoptimized
+                        priority
                     />
                 </div>
                 <div className="balloon balloon-yellow flex items-center justify-center">
@@ -120,6 +122,8 @@ const WishPage = () => {
                         width={200}
                         height={200}
                         className="size-24 rounded-xl"
+                        unoptimized
+                        priority
                     />
                 </div>
                 <div className="balloon balloon-green flex items-center justify-center">
@@ -129,6 +133,8 @@ const WishPage = () => {
                         width={200}
                         height={200}
                         className="size-24 rounded-xl"
+                        unoptimized
+                        priority
                     />
                 </div>
                 <div className="balloon balloon-blue flex items-center justify-center">
@@ -138,6 +144,8 @@ const WishPage = () => {
                         width={200}
                         height={200}
                         className="size-24 rounded-xl"
+                        unoptimized
+                        priority
                     />
                 </div>
             </div>

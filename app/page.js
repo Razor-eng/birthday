@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Lottie from "react-lottie";
 
-import pleaseAnimation from "../../public/please.json"; // Please animation
+import pleaseAnimation from "../public/please.json"; // Please animation
 
 const HomePage = () => {
   const [name, setName] = useState("");
