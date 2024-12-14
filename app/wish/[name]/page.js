@@ -158,7 +158,7 @@ const WishPage = () => {
             {/* "Celebrate Again" Button */}
             <Link
                 href={`/more/${name}`}
-                className="mb-64 md:mb-0 md:mt-10 bg-white text-black px-6 py-3 rounded-full shadow-lg hover:bg-gray-100 transition duration-300 z-50 hover:cursor-pointer"
+                className="mb-64 md:mb-0 md:mt-10 px-6 py-2 bg-[#F4C2C2] text-black font-semibold rounded-md shadow-lg hover:bg-[#F4C2f5] transition duration-300 z-50 hover:cursor-pointer"
             >
                 Please Click!
             </Link>
