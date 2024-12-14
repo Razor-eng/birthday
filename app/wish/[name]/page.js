@@ -16,6 +16,7 @@ import "aos/dist/aos.css"; // Import AOS styles
 import cakeAnimation from "../../../public/cake-animation.json"; // Cake animation
 import confettiAnimation from "../../../public/confetti.json"; // Confetti animation
 import Image from "next/image";
+import Link from "next/link";
 
 const WishPage = () => {
     const { name } = useParams();
@@ -155,12 +156,12 @@ const WishPage = () => {
             </div>
 
             {/* "Celebrate Again" Button */}
-            <button
-                onClick={() => window.location.reload()}
-                className="mb-56 md:mb-0 md:mt-10 bg-white text-black px-6 py-3 rounded-full shadow-lg hover:bg-gray-100 transition duration-300"
+            <Link
+                href={`/more/${name}`}
+                className="mb-64 md:mb-0 md:mt-10 bg-white text-black px-6 py-3 rounded-full shadow-lg hover:bg-gray-100 transition duration-300 z-50 hover:cursor-pointer"
             >
-                Celebrate Again!
-            </button>
+                Please Click!
+            </Link>
         </div>
     );
 };
